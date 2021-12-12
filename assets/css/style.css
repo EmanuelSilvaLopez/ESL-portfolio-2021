@@ -8,13 +8,14 @@
 :root {
     --primary-color: #001F3D;
     --secondary-color: #001021;
-    --tertiary-color: #90FFDC;
+    --tertiary-color: #C2FFEC;
 }
 
 body {
     color: var(--tertiary-color);
-    font-family: 'Roboto Condensed', sans-serif;
     background-color: var(--primary-color);
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -26,12 +27,12 @@ header {
     background-color: var(--secondary-color);
     background-size: cover;
     background-position: center;
-    
 }
 
 header h1 {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 50px;
+    font-family: 'Raleway', sans-serif;
     color: var(--tertiary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
@@ -60,29 +61,78 @@ nav ul {
 }
 
 nav ul li a {
-    margin: 10px 50px;
+    margin: 10px 70px;
     font-weight: lighter;
     font-size: 1.45vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+iframe {
+    padding: 10px 10px 10px 10px;
+    max-width: 80%;
+}
+
 h2 {
     font-size: 40px;
-    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
 }
+
+
 
 section {
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3%;
 }
 
-section h2 {
+h3 {
+    padding-top: 18px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 30px 30px 30px;
+    font-family: 'lato', sans-serif;
+}
+
+div {
+    background-color: var(--secondary-color);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.about-me div {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about-me img {
+    max-width: 30%;
     padding: 20px;
 }
 
-section img {
-    
+.about-me p {
+    text-align: justify;
+    line-height: 1.4;
+    max-width: 40%;
+}
+
+.contact div {
+    padding: 0 35% 0 35%;
+}
+
+.contact h2 {
+    padding: 30px 0px 0px 0px;
 }
