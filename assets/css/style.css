@@ -136,3 +136,54 @@ div {
 .contact h2 {
     padding: 30px 0px 0px 0px;
 }
+
+@media screen and (max-width: 980px) {
+    .about-me p {
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-me p {
+        max-width: 60%;
+    }
+    nav {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav {
+        display: none;
+        
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .about-me p {
+        max-width: 80%;
+        font-size: large;
+        text-align: center;
+    }
+    
+    .about-me img {
+        max-width: 50%;
+    }
+
+    .contact div {
+        padding: 10px 0px 5px 0px;
+    }
+
+    .contact h2 {
+        font-size: xx-large;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+}
