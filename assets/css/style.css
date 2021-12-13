@@ -1,8 +1,8 @@
+/* General Styles Start */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100vw;
 }
 
 :root {
@@ -17,7 +17,9 @@ body {
     font-weight: normal;
     font-family: 'Lato', sans-serif;
 }
+/* General Styles End */
 
+/* Header Styles */
 header {
     padding: 50px 0px 25px 0px;
     display: flex;
@@ -30,14 +32,16 @@ header {
 }
 
 header h1 {
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
     color: var(--tertiary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
+/* Header Styles End */
 
+/* Navigation Bar Styles Start */
 nav {
     padding: 20px;
     display: flex;
@@ -62,16 +66,13 @@ nav ul {
 
 nav ul li a {
     margin: 10px 70px;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1.45vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* Navigation Bar Styles End */
 
-iframe {
-    padding: 10px 10px 10px 10px;
-    max-width: 80%;
-}
-
+/* Text Styles Start */
 h2 {
     font-size: 40px;
     padding-bottom: 20px;
@@ -79,20 +80,16 @@ h2 {
     font-weight: normal;
 }
 
-
-
-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 3%;
-}
-
 h3 {
     padding-top: 18px;
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
 }
 
 p {
@@ -100,6 +97,21 @@ p {
     text-align: left;
     padding: 15px 30px 30px 30px;
     font-family: 'lato', sans-serif;
+    line-height: 1.6;
+}
+/* Text Styles End */
+
+/* Container Styles Start */
+iframe {
+    padding: 10px 10px 10px 10px;
+    max-width: 80%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
 }
 
 div {
@@ -110,7 +122,9 @@ div {
     flex-direction: column;
     
 }
+/* Container Styles End */
 
+/* About me Styles start */
 .about-me div {
     display: flex;
     align-items: center;
@@ -125,65 +139,88 @@ div {
 
 .about-me p {
     text-align: justify;
-    line-height: 1.4;
     max-width: 40%;
 }
+/* About me styles end */
 
+/* Contact styles start */
 .contact div {
-    padding: 0 35% 0 35%;
+    padding: 0 30% 0 30%;
 }
 
 .contact h2 {
     padding: 30px 0px 0px 0px;
 }
 
+.contact p {
+    text-align: center;
+}
+/* Contact styles end */
+
+/* Various Screen Sizes Styling */
 @media screen and (max-width: 980px) {
     .about-me p {
         max-width: 50%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .about-me p {
-        max-width: 60%;
-    }
-    nav {
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    nav {
-        display: none;
-        
     }
 
     p {
         text-align: center;
     }
 
+    nav ul li a {
+        font-size: large;
+        margin: 50px;
+    }
+
+    .contact h2 {
+        font-size: xx-large;
+        padding: 20px 0px 10px 0px;
+        text-align: center;
+    }
+
+    .contact div {
+        padding: 0px 100px 20px 100px;
+    }
+
+    .contact p {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    p {
+        text-align: center;
+    }
+    
     .about-me p {
-        max-width: 80%;
+        max-width: 60%;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    nav {
+        display: none;   
+    }
+
+    .about-me p {
+        max-width: 100%;
         font-size: large;
         text-align: center;
     }
     
     .about-me img {
-        max-width: 50%;
-    }
-
-    .contact div {
-        padding: 10px 0px 5px 0px;
-    }
-
-    .contact h2 {
-        font-size: xx-large;
-        padding: 5px 0px 0px 0px;
+        max-width: 45%;
     }
 
     .contact p {
-        text-align: center;
+        font-size: 2.7vw;
     }
 
 }
