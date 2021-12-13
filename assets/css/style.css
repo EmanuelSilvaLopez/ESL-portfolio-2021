@@ -100,72 +100,48 @@ div {
     margin: 10px 10px;
     background-color: var(--secondary-color);
 }
-/* Text Styles Start */
-h2 {
-    font-size: 40px;
-    padding-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-}
-
-h3 {
-    padding-top: 18px;
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-}
-
-a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-}
-
-
-/* Text Styles End */
-
-/* Container Styles Start */
-iframe {
-    padding: 10px 10px 10px 10px;
-    max-width: 80%;
-}
-
-
-
-
-/* Container Styles End */
 
 /* About me Styles start */
 .about-me div {
     display: flex;
-    align-items: center;
-    background-color: var(--secondary-color);
     flex-direction: row;
-    justify-content: space-evenly;
-}
-.about-me img {
-    max-width: 30%;
-    padding: 20px;
+    align-items: center;
 }
 
 .about-me p {
     text-align: justify;
-    max-width: 40%;
+    margin: 0px 5%;
+    padding: 10px;
 }
 /* About me styles end */
 
-/* Contact styles start */
-.contact div {
-    padding: 0 30% 0 30%;
+/* Text Styles Start */
+h2 {
+    font-family: var(--heading-font);
+    font-size: var(--fs-subheading);
+    letter-spacing: 0.15em;
+    padding-top: 10px;
 }
 
-.contact h2 {
-    padding: 30px 0px 0px 0px;
+h3 {
+    font-family: var(--body-font);
+    font-size: var(--fs-title);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-bottom: 15px;
 }
 
-.contact p {
-    text-align: center;
+/* Text Styles End */
+
+/* Container Styles Start */
+.web-dev iframe {
+    border: solid 2px var(--tertiary-color);
+    border-radius: 25px;
 }
-/* Contact styles end */
+
+/* Container Styles End */
+
+
 
 /* Various Screen Sizes Styling */
 @media screen and (max-width: 980px) {
