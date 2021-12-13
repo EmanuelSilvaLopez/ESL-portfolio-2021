@@ -75,6 +75,23 @@ nav ul {
 
 /* Navigation Bar Styles End */
 
+/* Text styles start */
+h2 {
+    font-family: var(--heading-font);
+    font-size: var(--fs-subheading);
+    letter-spacing: 0.15em;
+    padding-top: 10px;
+}
+
+h3 {
+    font-family: var(--body-font);
+    font-size: var(--fs-title);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding-bottom: 15px;
+}
+/* Text Styles End */
+
 img {
     max-width: 30%;
     height: auto;
@@ -85,6 +102,7 @@ img {
     background: var(--tertiary-color);
 }
 
+/* Container Styles Start */
 section {
     display: flex;
     flex-direction: column;
@@ -101,6 +119,12 @@ div {
     background-color: var(--secondary-color);
 }
 
+.web-dev iframe {
+    border: solid 2px var(--tertiary-color);
+    border-radius: 25px;
+}
+/* Container Styles End */
+
 /* About me Styles start */
 .about-me div {
     display: flex;
@@ -115,98 +139,60 @@ div {
 }
 /* About me styles end */
 
-/* Text Styles Start */
-h2 {
-    font-family: var(--heading-font);
-    font-size: var(--fs-subheading);
-    letter-spacing: 0.15em;
-    padding-top: 10px;
-}
-
-h3 {
-    font-family: var(--body-font);
-    font-size: var(--fs-title);
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    padding-bottom: 15px;
-}
-
-/* Text Styles End */
-
-/* Container Styles Start */
-.web-dev iframe {
-    border: solid 2px var(--tertiary-color);
-    border-radius: 25px;
-}
-
-/* Container Styles End */
-
-
-
 /* Various Screen Sizes Styling */
 @media screen and (max-width: 980px) {
+    section {
+        margin: 50px 100px;
+    }
     .about-me p {
-        max-width: 50%;
+        margin: 0px 0px 0px 20px;
     }
-
-    p {
-        text-align: center;
-    }
-
-    nav ul li a {
-        font-size: large;
-        margin: 50px;
-    }
-
-    .contact h2 {
-        font-size: xx-large;
-        padding: 20px 0px 10px 0px;
-        text-align: center;
-    }
-
-    .contact div {
-        padding: 0px 100px 20px 100px;
-    }
-
-    .contact p {
-        padding: 0px 0px 0px 0px;
+    .about-me img {
+        margin: 0;
+        max-width: 40%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    
-    p {
-        text-align: center;
+    header h1 {
+        font-size: 3rem;
     }
-    
-    .about-me p {
-        max-width: 60%;
-    }
-
     nav {
         position: relative;
-        top: 0;
     }
 
+    .about-me p {
+        margin-left: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 575px) {
-    nav {
-        display: none;   
+    section {
+        margin: 20px;
+    }
+    div {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .about-me div {
+        flex-direction: column;
     }
 
     .about-me p {
-        max-width: 100%;
-        font-size: large;
-        text-align: center;
-    }
-    
-    .about-me img {
-        max-width: 45%;
+        margin-left: 0;
     }
 
-    .contact p {
-        font-size: 2.7vw;
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
     }
 
 }
