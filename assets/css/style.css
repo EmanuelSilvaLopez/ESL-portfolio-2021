@@ -9,44 +9,51 @@
     --primary-color: #001F3D;
     --secondary-color: #001021;
     --tertiary-color: #C2FFEC;
+    --fs-xl: clamp(2rem, 10vw, 5rem);
+    --fs-nav: 1.5rem;
+    --fs-subheading: 2.3rem;
+    --fs-title: 1.5rem;
+    --fs-400: 1.3rem;
+    --heading-font: 'bebas neue', cursive;
+    --body-font: 'lato', sans-serif;
 }
 
 body {
     color: var(--tertiary-color);
     background-color: var(--primary-color);
-    font-weight: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--body-font)
+}
+
+p {
+    margin: 10px 0;
+    font-size: var(--fs-400);
+    text-align: justify;
+    font-family: var(--body-font);
+    font-weight: lighter;
 }
 /* General Styles End */
 
 /* Header Styles */
 header {
-    padding: 50px 0px 25px 0px;
+    padding: 50px 0 30px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     top: 0;
     background-color: var(--secondary-color);
-    background-size: cover;
-    background-position: center;
 }
 
 header h1 {
-    font-weight: normal;
-    font-size: 50px;
-    font-family: 'Raleway', sans-serif;
+    font-size: var(--fs-xl);
     color: var(--tertiary-color);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    font-family: var(--heading-font);
+    letter-spacing: .2em;
 }
 /* Header Styles End */
 
 /* Navigation Bar Styles Start */
 nav {
-    padding: 20px;
-    display: flex;
     background-color: var(--secondary-color);
-    justify-content: center;
     position: sticky;
     top: 0;
 }
@@ -54,14 +61,16 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--tertiary-color);
+    font-size: var(--fs-nav);
+    font-family: var(--body-font);
+    font-weight: lighter;
 }
 
 nav ul {
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 nav ul li a {
@@ -92,13 +101,7 @@ a {
     color: var(--tertiary-color);
 }
 
-p {
-    font-size: 20px;
-    text-align: left;
-    padding: 15px 30px 30px 30px;
-    font-family: 'lato', sans-serif;
-    line-height: 1.6;
-}
+
 /* Text Styles End */
 
 /* Container Styles Start */
