@@ -73,14 +73,33 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li a {
-    margin: 10px 70px;
-    font-weight: normal;
-    font-size: 1.45vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 /* Navigation Bar Styles End */
 
+img {
+    max-width: 30%;
+    height: auto;
+    padding: 2px;
+    margin-left: 100px;
+    outline: auto;
+    outline-style: round;
+    background: var(--tertiary-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 200px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10px 10px;
+    background-color: var(--secondary-color);
+}
 /* Text Styles Start */
 h2 {
     font-size: 40px;
@@ -110,21 +129,9 @@ iframe {
     max-width: 80%;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3%;
-}
 
-div {
-    background-color: var(--secondary-color);
-    display: flex;
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
-    
-}
+
+
 /* Container Styles End */
 
 /* About me Styles start */
