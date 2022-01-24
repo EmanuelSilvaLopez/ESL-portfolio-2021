@@ -107,7 +107,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 200px;
+    margin: 5% auto;
+    width: 70%;
 }
 
 div {
